@@ -25,14 +25,14 @@ Summary of steps:
 * Step 1: Windows: Generate training data from simulator by using 'TRAINING MODE'
 * Step 2: Linux: Move data to linux machine
 * Step 3: Linux: Edit the driving_log.csv file. First three columns have paths to images, change them to match with path where the 'IMG' folder is stored in linux machine.
-Step 4: Linux: Place the driving_log.csv in parent folder of the code where model.py is kept. 'IMG' folder can be kept in any folder as long as the path is provided in driving_log.csv file
-Step 5: Linux: Set self.cfg.cuda=True in the model.py file. This is done to use GPU
-Step 6: Linux: RUN model.py to train the network on GPU. Trained model will be saved in .pth file extenstion.
-Step 7: Windows: You can make a duplicate repository of code used on linux machine in Windows.
-Step 8: Windows:  In model.py file, add 'map_location='cpu' to torch.load(). Example: self.net.load_state_dict(torch.load('model_ST_Cuda.pth',map_location='cpu')) . A CUDA error will be raised if this is not done in the model.py file.
-Step 8: Windows: Open Udacity simulator and choose 'AUTONOMOUS MODE'. Select the same track which was used to generate the training data.
-Step 9: Windows: Run drive.py file. Make sure trained model name matches with the model name which loadModel() function loads.
-Step 10: Be amazed that it works!
+* Step 4: Linux: Place the driving_log.csv in parent folder of the code where model.py is kept. 'IMG' folder can be kept in any folder as long as the path is provided in driving_log.csv file
+* Step 5: Linux: Set self.cfg.cuda=True in the model.py file. This is done to use GPU
+* Step 6: Linux: RUN model.py to train the network on GPU. Trained model will be saved in .pth file extenstion.
+* Step 7: Windows: You can make a duplicate repository of code used on linux machine in Windows.
+* Step 8: Windows:  In model.py file, add 'map_location='cpu' to torch.load(). Example: self.net.load_state_dict(torch.load('model_ST_Cuda.pth',map_location='cpu')) . A CUDA error will be raised if this is not done in the model.py file.
+* Step 8: Windows: Open Udacity simulator and choose 'AUTONOMOUS MODE'. Select the same track which was used to generate the training data.
+* Step 9: Windows: Run drive.py file. Make sure trained model name matches with the model name which loadModel() function loads.
+* Step 10: Be amazed that it works!
 
 
 The data generated from the simulator has ONE folder and ONE csv file, 1. 'IMG' Folder containing  training Images and 2. 'driving_log.csv' file containing steering angle, throttle values, brake values and speed for each frame/image captured.
