@@ -8,6 +8,7 @@ https://github.com/pgebert/autonomous_car_simulation code respository is great f
 
 But if you have access to a linux machine with GPU, and want to train model on it, follow this below procedure:
 
+
 On Linux:
 
 Udacity simulator did not run in linux (at least I could not make it work even after trying lot of online available solutions). The simulator window pops up and closes immediately when we try to open the simulator in linux.
