@@ -17,9 +17,9 @@ Udacity simulator did not run in linux (at least I could not make it work even a
 So how do we do training and testing in linux?
 There are few changes that needs to be done to the above code and few procedures required to be followed to make this work!
 
-Training data generation: Done using windows machine
-Training model: Done using Linux Machine with GPU
-Testing: Done on windows machine 
+* Training data generation: Done using windows machine
+* Training model: Done using Linux Machine with GPU
+* Testing: Done on windows machine 
 
 Summary of steps:
 * Step 1: Windows: Generate training data from simulator by using 'TRAINING MODE'
