@@ -22,9 +22,9 @@ Training model: Done using Linux Machine with GPU
 Testing: Done on windows machine 
 
 Summary of steps:
-Step 1: Windows: Generate training data from simulator by using 'TRAINING MODE'
-Step 2: Linux: Move data to linux machine
-Step 3: Linux: Edit the driving_log.csv file. First three columns have paths to images, change them to match with path where the 'IMG' folder is stored in linux machine.
+*Step 1: Windows: Generate training data from simulator by using 'TRAINING MODE'
+*Step 2: Linux: Move data to linux machine
+*Step 3: Linux: Edit the driving_log.csv file. First three columns have paths to images, change them to match with path where the 'IMG' folder is stored in linux machine.
 Step 4: Linux: Place the driving_log.csv in parent folder of the code where model.py is kept. 'IMG' folder can be kept in any folder as long as the path is provided in driving_log.csv file
 Step 5: Linux: Set self.cfg.cuda=True in the model.py file. This is done to use GPU
 Step 6: Linux: RUN model.py to train the network on GPU. Trained model will be saved in .pth file extenstion.
