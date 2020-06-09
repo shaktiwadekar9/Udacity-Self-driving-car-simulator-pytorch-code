@@ -30,10 +30,10 @@ Summary of steps:
 * Step 6: Linux: RUN model.py to train the network on GPU. Trained model will be saved in .pth file extenstion.
 * Step 7: Windows: You can make a duplicate repository of code used on linux machine in Windows.
 * Step 8: Windows:  In model.py file, add **map_location='cpu'** to torch.load(). Example: self.net.load_state_dict(torch.load('model_ST_Cuda.pth',map_location='cpu')) . A CUDA error will be raised if this is not done in the model.py file.
-* Step 8: Windows:  In model.py file, set **self.cfg.cuda=False**.
-* Step 9: Windows: Open Udacity simulator and choose 'AUTONOMOUS MODE'. Select the same track which was used to generate the training data.
-* Step 10: Windows: Run drive.py file. Make sure trained model name matches with the model name which loadModel() function loads.
-* Step 11: Be amazed that it works!
+* Step 9: Windows:  In model.py file, set **self.cfg.cuda=False**.
+* Step 10: Windows: Open Udacity simulator and choose 'AUTONOMOUS MODE'. Select the same track which was used to generate the training data.
+* Step 11: Windows: Run drive.py file. Make sure trained model name matches with the model name which loadModel() function loads.
+* Step 12: Be amazed that it works!
 
 
 The data generated from the simulator has ONE folder and ONE csv file, 1. 'IMG' Folder containing  training Images and 2. 'driving_log.csv' file containing steering angle, throttle values, brake values and speed for each frame/image captured.
