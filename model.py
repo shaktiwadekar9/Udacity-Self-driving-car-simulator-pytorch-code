@@ -84,7 +84,7 @@ class Model():
         cfg.test_epochs = 1
         cfg.train_epochs = 400
         cfg.optimizer = 'adam'
-        cfg.cuda = False
+        cfg.cuda = True
 
         self.cfg = cfg
         self.log = Logger(cfg)
@@ -139,11 +139,11 @@ class Model():
     # Save model in file system
     def saveModel(self):
         print('Saving Model            ')
-        torch.save(self.net.state_dict(), 'model.pth')
+        torch.save(self.net.state_dict(), 'model_linux.pth')
 
     # Load model from file system
     def loadModel(self):
-        self.net.load_state_dict(torch.load('model.pth',map_location='cpu'))
+        self.net.load_state_dict(torch.load('model_linux.pth'))## add this map_location='cpu' when testing as given in README
 
 
     ########################################################################
