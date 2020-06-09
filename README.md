@@ -2,15 +2,15 @@
 
 Training and testing self-driving car in udacity self-driving-car simulator:
 
-On Windows:
+**On Windows:**
 
 https://github.com/pgebert/autonomous_car_simulation code respository is great for training and testing models on Windows machine with or without GPU. I recommend using pgebert's code if you want to do all the process in windows machine. Small models will still have reasonable training time if GPU is not present. BUT if model size increases, training time sharply increases. So if you do not have GPU in windows machine and model is large training will take too long.
 
-But if you have access to a linux machine with GPU, and want to train model on it, follow this below procedure:
+*But if you have access to a linux machine with GPU, and want to train model on it, follow this below procedure:*
 
 
 
-On Linux:
+**On Linux:**
 
 Udacity simulator did not run in linux (at least I could not make it work even after trying lot of online available solutions). The simulator window pops up and closes immediately when we try to open the simulator in linux.
 
