@@ -22,12 +22,21 @@ There are few changes that needs to be done to the above code and few procedures
 * Testing: Done on windows machine 
 
 Summary of steps:
+
+**Training data generation:**
+
 * Step 1: Windows: Generate training data from simulator by using 'TRAINING MODE'
 * Step 2: Linux: Move data to linux machine
 * Step 3: Linux: Edit the driving_log.csv file. First three columns have paths to images, change them to match with path where the 'IMG' folder is stored in linux machine.
 * Step 4: Linux: Place the driving_log.csv in parent folder of the code where model.py is kept. 'IMG' folder can be kept in any folder as long as the path is provided in driving_log.csv file
+
+**Training model:**
+
 * Step 5: Linux: Set **cfg.cuda=True** in the model.py file. This is done to use GPU
 * Step 6: Linux: RUN model.py to train the network on GPU. Trained model will be saved in .pth file extenstion.
+
+**Testing:**
+
 * Step 7: Windows: You can make a duplicate repository of code used on linux machine in Windows.
 * Step 8: Windows:  In model.py file, add **map_location='cpu'** to torch.load(). Example: self.net.load_state_dict(torch.load('model_ST_Cuda.pth',map_location='cpu')) . A CUDA error will be raised if this is not done in the model.py file.
 * Step 9: Windows:  In model.py file, set **cfg.cuda=False**.
