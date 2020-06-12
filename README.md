@@ -8,7 +8,7 @@ https://github.com/pgebert/autonomous_car_simulation code respository is great f
 
 *But if you have access to a linux machine with GPU, and want to train model on it, follow this below procedure:*
 
-**The pgebert's code has bias term in it, but we can train the model successfully without having any bias. I have removed the bias and trained it succesfully!. Check dataloader.py to see the changes**
+**The pgebert's code has bias term in it, but we can train the model successfully without having any bias. I have removed the bias and trained it successfully!. Check dataloader.py to see the changes**
 
 **On Linux:**
 
