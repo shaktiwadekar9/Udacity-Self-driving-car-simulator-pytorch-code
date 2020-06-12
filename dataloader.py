@@ -46,9 +46,9 @@ class SimulationDataset(Dataset):
         # Preprocess and filter data
         self.targets = gaussian_filter1d(self.targets, 2)      
         
-        bias = 0.03
-        self.image_paths = [image_path for image_path, target in zip(self.image_paths, self.targets) if abs(target) > bias]
-        self.targets = [target for target in self.targets if abs(target) > bias]
+        #bias = 0.03
+        self.image_paths = [image_path for image_path, target in zip(self.image_paths, self.targets)]# if abs(target) > bias]
+        self.targets = [target for target in self.targets]# if abs(target) > bias]
 
     def __getitem__(self, index):
 
