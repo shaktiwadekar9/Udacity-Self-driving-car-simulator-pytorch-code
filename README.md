@@ -47,5 +47,7 @@ Summary of steps:
 
 The data generated from the simulator has ONE folder and ONE csv file, 1. 'IMG' Folder containing  training Images and 2. 'driving_log.csv' file containing steering angle, throttle values, brake values and speed for each frame/image captured.
 
+**If you are having problems with setting up conda environment for this code using .yml provided here. I recommend installing packages one by one manually in a new environment [There are not a lot of packages to install]. This will definitely help in setting up environment!**
+
 
 
