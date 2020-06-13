@@ -15,7 +15,7 @@ https://github.com/pgebert/autonomous_car_simulation code respository is great f
 Udacity simulator did not run in linux (at least I could not make it work even after trying lot of online available solutions). The simulator window pops up and closes immediately when we try to open the simulator in linux.
 
 So how do we do training and testing in linux?
-There are few changes that needs to be done to the above code and few procedures required to be followed to make this work!
+There are few changes that needs to be done to the above (pgebert's) code and few procedures required to be followed to make this work!
 
 * Training data generation: Done using windows machine
 * Training model: Done using Linux Machine with GPU
